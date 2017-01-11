@@ -26,10 +26,13 @@ namespace SysPassportConfigurator
         {
             _dbPath = dbPath;
         }
+
         public MainWindow()
         {
             InitializeComponent();
-
+            // Set an icon using code
+            Uri iconUri = new Uri("pack://application:,,,/1.ico", UriKind.RelativeOrAbsolute);
+            this.Icon = BitmapFrame.Create(iconUri);
 
         }
     }
